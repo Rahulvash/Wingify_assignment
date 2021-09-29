@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wingify Assigment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="container">
+            <div class="section-one ">
+                <div class="section-heading">
+                    <h2>Sample Heading</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Id excepturi voluptas pariatur aliquid sunt illum 
+                        
+                        , officia tempora impedit
+                    </p>
+                </div>
+            </div>
+            <div class="section-second">
+                <form id="signup" class="form">
+                    <h2>Create an account</h2>
+                    
+                    <!-- Email field -->
+                    <div class="form-field inputField">
+                        <label for="username" class="heading">Enter your email</label>
+                        <input type="text" name="username" id="email" autocomplete="off">
+                        <span class="small hide"></span>
+                    </div>
+
+                    <!-- Date of Birth field -->
+                    <div class="form-field">
+                       
+                            <label for="date of birth" class="heading">Date of Birth <small>(optional)</small></label>
+                       
+                        <div class="block-container">
+                            <div class="field-inline-block">
+                                <label>Date</label>
+                                <input type="number" pattern="[0-9]*" maxlength="2" size="2" class="date-field" placeholder="03" id="datePlaceholder" min="1" max="31"/>
+                            </div>
+                            
+                            <div class="field-inline-block">
+                                <label>Month</label>
+                                
+                                <select id="month" name="month" >
+                                    <option value="01">January</option>
+                                    <option value="02">February</option>
+                                    <option value="03" selected>March</option>
+                                    <option value="04">April</option>
+                                    <option value="05">May</option>
+                                    <option value="06">June</option>
+                                    <option value="07">July</option>
+                                    <option value="08">August</option>
+                                    <option value="09">September</option>
+                                    <option value="10">October</option>
+                                    <option value="11">November</option>
+                                    <option value="12">December</option>
+                                </select>
+                            </input>
+                            </div>
+                            
+                            <div class="field-inline-block">
+                                <label>Year</label>
+                                
+                                <select id="year" name="year">
+                                   
+                                    <option value="1971">1971</option>
+                                    <option value="1972">1972</option>
+                                    <option value="1973">1973</option>
+                                    <option value="1974">1974</option>
+                                    <option value="1975">1975</option>
+                                    <option value="1976">1976</option>
+                                    <option value="1977">1977</option>
+                                    <option value="1978">1978</option>
+                                    <option value="1979">1979</option>
+                                    <option value="1980">1980</option>
+                                    <option value="1981">1981</option>
+                                    <option value="1982">1982</option>
+                                    <option value="1983">1983</option>
+                                    <option value="1984">1984</option>
+                                    <option value="1985">1985</option>
+                                    <option value="1986">1986</option>
+                                    <option value="1987">1987</option>
+                                    <option value="1988">1988</option>
+                                    <option value="1989">1989</option>
+                                    <option value="1990">1990</option>
+                                    <option value="1991">1991</option>
+                                    <option value="1992">1992</option>
+                                    <option value="1993">1993</option>
+                                    <option value="1994">1994</option>
+                                    <option value="1995" selected>1995</option>
+                                    <option value="1996">1996</option>
+                                    <option value="1997">1997</option>
+                                    <option value="1998">1998</option>
+                                    <option value="1999">1999</option>
+                                    <option value="2000">2000</option>
+                                    <option value="2001">2001</option>
+                                    <option value="2002">2002</option>
+                                    <option value="2003">2003</option>
+                                    <option value="2004">2004</option>
+                                    <option value="2005">2005</option>
+                                    <option value="2006">2006</option>
+                                    <option value="2007">2007</option>
+                                    <option value="2008">2008</option>
+                                    <option value="2009">2009</option>
+                                    <option value="2010">2010</option>
+                                    <option value="2011">2011</option>
+                                    <option value="2012">2012</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-field inputField">
+                        <label for="password" class="heading">Choose a strong password</label>
+                        <input type="password" name="password" id="password" autocomplete="off">
+                        <span class="small hide"></span>
+                    </div>
+
+                    <div class="form-field agencyType">
+                        <label for="agency" class="heading">Are you an agency or individual?</label>
+                        <div class="form-field-agency-type">
+                            <div class="individual">
+                                <input type="radio" id="individual" value="individual" name="individual">
+                                <label for="Individual">Individual</label>
+                            </div>  
+                            <div class="agency">
+                                <input type="radio" id="agency" value="agency" name="individual">
+                                <label for="Agency">Agency</label>
+                            </div>
+                            
+                        </div>   
+                    </div>
+
+                    <div class="form-field ourProduct">
+                        <label for="agency" class="heading">Already using any of our other products<small>(optional)</small></label>
+                        <div class="form-field-agency-type">
+                            <div class="individual">
+                                <input type="radio" id="yesValue" value="Yes" name="value">
+                                <label for="Yes">Yes</label>
+                            </div>  
+                            <div class="agency">
+                                <input type="radio" id="noValue" value="No" name="value">
+                                <label for="No">No</label>
+                            </div>
+                            
+                        </div>   
+                    </div>
+
+                    <div class="form-field">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
